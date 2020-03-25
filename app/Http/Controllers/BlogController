@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Post;
+use App\User;
+use App\Category;
+use App\Comment;
+use App\Tag;
+use App\PostTag;
+use DB;
+use Auth;
+
+class BlogController extends Controller
+{ 
+    public function index(){
+        return view('posts.index');
+    }
+
+}
+
